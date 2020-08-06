@@ -1,5 +1,6 @@
 @import '~react-bulma-components/src/index.sass';
 
+
 .App {
   text-align: center;
 }
@@ -15,15 +16,52 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div.navbar-brand{
+
+  margin-left: 128px;
+}
+
+nav.navbar {
+  background-color: black;
+  border-bottom: 1px solid #81FCED;
+}
+
+.navbar-item {
+  right: 96px;
+}
+
+a.navbar-item {
+  color: whitesmoke;
+  text-indent: 50px;
+}
+
+nav.level{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: black;
+  color: whitesmoke;
+  top: 5px;
+  bottom: 5px;
+}
+
+.navbar-item.has-dropdown {
+  margin-left: 70px;
+}
+
+div.level-item {
+  padding: 8px;
+  text-indent: 60px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+p.heading {
+  text-transform: initial;
+}
+
+p.title {
+  font-size: 16px;
+  color: green;
+  
+  
 }
 
 .App-link {
