@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       // Main navbar code starts
-      <div>
+      <div class="flex-wrap">
       <nav className='navbar' role='navigation' aria-label='main navigation'>
         <div className='navbar-brand'>
           <a href='/' className='navbar-item'>
@@ -47,10 +47,10 @@ class App extends Component {
       </nav> 
       {/* level code starts */}
       <nav class="level">
-        <div class="level-left">
+        <div class="level-left">  
           <div class="level-item has-text-centered"> 
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
+            <a class="navbar-link level-item">
               Overview
             </a>
             <div class="navbar-dropdown">
@@ -66,6 +66,7 @@ class App extends Component {
             </div>
           </div>
         </div>  
+    
         <div class="level-item has-text-centered">
           <div>
             <p class="heading">Total signups</p>
@@ -96,9 +97,94 @@ class App extends Component {
             <p class="title">23</p>
           </div>
         </div>
-        </div>
+      </div> 
       </nav> 
-      </div>  
+    <div class="columns is-mobile">
+      <div class="column is-one-fifth">
+        <p class="bd-notification">
+        <p class="buttons">
+          <a class="button is-medium">
+            <span class="icon is-medium">
+            <img src="Group 174.svg" alt='Logo' width='25' height='25' />
+            </span>
+          </a>
+        </p>
+        <p class="buttons">
+          <a class="button is-medium">
+            <span class="icon is-medium">
+              <img src="funds.svg"alt='Logo' width='25' height='25' />
+            
+              {/* <i class="fas fa-heading"></i> */}
+            </span>
+          </a>
+        </p>
+        <p class="buttons">
+          <a class="button is-medium">
+            <span class="icon is-medium">
+            <img src="Path 188.svg" alt='Logo' width='25' height='25' />
+            
+            </span>
+          </a>
+        </p>
+        <p class="buttons">
+          <a class="button is-medium">
+            <span class="icon is-medium">
+            <img src="history.svg" alt='Logo' width='25' height='25' />
+            </span>
+          </a>
+        </p>
+        <p class="buttons">
+          <a class="button is-medium">
+            <span class="icon is-medium">
+            <img src="verification.svg" alt='Logo' width='25' height='25' />
+            </span>
+          </a>
+        </p>
+        <p class="buttons">
+          <a class="button is-medium">
+            <span class="icon is-medium">
+            <img src="locked.svg" alt='Logo' width='25' height='25' />
+            </span>
+          </a>
+        </p>
+
+        </p>
+      </div>
+      <div class="column is-four-fifths">
+      <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Signups
+      </a>
+      <a class="navbar-item">
+        Investments
+      </a>
+      <a class="navbar-item">
+        Revenue
+      </a>
+      <a class="navbar-item">
+        Exits
+      </a>
+      <a class="navbar-item">
+        Trades
+      </a>
+      </div>
+      <div class="navbar-end">
+      <div class="navbar-item">
+        
+        </div>
+      </div>
+    </div>
+      </div>
+      </div> 
+      <div class="column is-two-fifths"> 
+        <p class="bd-notification">40%</p>
+      </div>
+      <div class="column is-two-fifths">
+        <p class="bd-notification">40%</p>
+      </div>
+    </div> 
+    
     );
   }
 }

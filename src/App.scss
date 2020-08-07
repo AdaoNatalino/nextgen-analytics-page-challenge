@@ -31,7 +31,7 @@ nav.navbar {
 }
 
 a.navbar-item {
-  color: whitesmoke;
+  color: darkgray;
   text-indent: 50px;
 }
 
@@ -43,14 +43,16 @@ nav.level{
   bottom: 5px;
 }
 
+
 .navbar-item.has-dropdown {
-  margin-left: 70px;
+  margin-left: 90px;
 }
 
 div.level-item {
   padding: 8px;
   text-indent: 60px;
   justify-content: center;
+  flex-shrink: 1;
 }
 
 p.heading {
@@ -62,6 +64,38 @@ p.title {
   color: green;
   
   
+}
+div.flex-wrap {
+
+  width: 100%;
+  height: auto;
+  background-color: black
+
+}
+
+.column.is-one-fifth {
+  background-color: black;
+  height: auto;
+  margin-top: 40px;
+}
+
+.button.is-medium {
+
+  background-color: black;
+  border: black;
+  left: 120px;
+}
+
+.column.is-four-fifths {
+  background-color: black;
+  height: auto;
+}
+.navbar-menu {
+  border-bottom: 1px solid;
+}
+.navbar-start {
+
+  margin-left: 40px;
 }
 
 .App-link {
