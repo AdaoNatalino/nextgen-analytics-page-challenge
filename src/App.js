@@ -11,7 +11,7 @@ class App extends Component {
       <nav className='navbar' role='navigation' aria-label='main navigation'>
         <div className='navbar-brand'>
           <a href='/' className='navbar-item'>
-            <img src='logo.png' alt='Logo' width='112' height='32' />
+            <img src='logo.png' alt='Logo' width='112' height='42' />
           </a>
           <a
             href='/'
@@ -46,9 +46,16 @@ class App extends Component {
         </div>
       </nav> 
       {/* level code starts */}
-      <nav class="level">
-        <div class="level-left">  
-          <div class="level-item has-text-centered"> 
+      {/* <section class="section"> */}
+         {/* <div class="container"> */}
+      {/* <nav class="level"> */}
+        {/* <div class="level-left">   */}
+
+          {/* <div class="level-item has-text-centered">   */}
+          <section class="data-overview">
+          <div class="columns">
+          <div class="column has-text-centered">
+          <div class="box">
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link level-item">
               Overview
@@ -65,43 +72,86 @@ class App extends Component {
               </a>
             </div>
           </div>
-        </div>  
+        </div> 
+        </div> 
     
-        <div class="level-item has-text-centered">
+        {/* <div class="level-item has-text-centered"> */}
+        <div class="column has-text-centered">
+        <div class="box">
           <div>
             <p class="heading">Total signups</p>
             <p class="title">648</p>
           </div>
         </div>
-        <div class="level-item has-text-centered">
+        </div>
+        {/* <div class="level-item has-text-centered">  */}
+        <div class="column has-text-centered">
+        <div class="box">
           <div>
             <p class="heading">Last weeks</p>
             <p class="title">12</p>
           </div>
         </div>
-        <div class="level-item has-text-centered">
+        </div>
+        {/* <div class="level-item has-text-centered">  */}
+        <div class="column has-text-centered">
+        <div class="box">
           <div>
             <p class="heading">Total investments</p>
             <p class="title">102</p>
           </div>
         </div>
-        <div class="level-item has-text-centered">
+        </div>
+        {/* <div class="level-item has-text-centered">  */} 
+        <div class="column has-text-centered">
+        <div class="box">
           <div>
             <p class="heading">Average investment</p>
             <p class="title">NOK 345,565</p>
           </div>
         </div>
-        <div class="level-item has-text-centered">
+        </div>
+        {/* <div class="level-item has-text-centered">  */}
+        <div class="column has-text-centered">
+        <div class="box">
           <div>
             <p class="heading">Total exits</p>
             <p class="title">23</p>
           </div>
         </div>
-      </div> 
-      </nav> 
-    <div class="columns is-mobile">
-      <div class="column is-one-fifth">
-        <p class="bd-notification">
+        </div>
+        </div>
+      </section>  
+      {/* </div> */}
+      {/* </nav> */}
+      {/* </div> */}
+      {/* </section> */}
+      <section class="company-details">
+      {/* <div id="navbarBasicExample" class="navbar-menu"> */}
+    <div class="navbar-start">
+      <li class="navbar-item">
+        signups
+      </li>
+      <li class="navbar-item">
+        investments
+      </li>
+      <li class="navbar-item">
+        revenue
+      </li>
+      <li class="navbar-item">
+        exits
+      </li>
+      <li class="navbar-item">
+        trades
+      </li>
+      </div>
+    {/* </div> */}
+      
+      </section>
+     
+    <aside class="side-nav">
+    <div class="columns">
+      <div class="column is-one-third">
         <p class="buttons">
           <a class="button is-medium">
             <span class="icon is-medium">
@@ -147,44 +197,14 @@ class App extends Component {
             </span>
           </a>
         </p>
+      </div>
+      <div class="column">Auto</div>
+      <div class="column">Auto</div>
+      </div>
+      </aside>
+      
+  </div>   
 
-        </p>
-      </div>
-      <div class="column is-four-fifths">
-      <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item">
-        Signups
-      </a>
-      <a class="navbar-item">
-        Investments
-      </a>
-      <a class="navbar-item">
-        Revenue
-      </a>
-      <a class="navbar-item">
-        Exits
-      </a>
-      <a class="navbar-item">
-        Trades
-      </a>
-      </div>
-      <div class="navbar-end">
-      <div class="navbar-item">
-        
-        </div>
-      </div>
-    </div>
-      </div>
-      </div> 
-      <div class="column is-two-fifths"> 
-        <p class="bd-notification">40%</p>
-      </div>
-      <div class="column is-two-fifths">
-        <p class="bd-notification">40%</p>
-      </div>
-    </div> 
-    
     );
   }
 }
