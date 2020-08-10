@@ -1,4 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import "zingchart/es6";
+import ZingChart from "zingchart-react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
+
+import TotalSignups from './TotalSignups.jsx';
+import {Users} from './Users';
 import logo from './logo.svg';
 import './App.scss';
 import 'bulma';
@@ -6,8 +17,16 @@ import 'bulma';
 class App extends Component {
   render() {
     return (
-      // Main navbar code starts
+      
+      //Main navbar code starts 
       <div class="flex-wrap">
+      <Router>
+        {/* <Switch>
+        <Route path="/">
+          <TotalSignups />
+        </Route>
+        </Switch>
+      </Router>  */}
       <nav className='navbar' role='navigation' aria-label='main navigation'>
         <div className='navbar-brand'>
           <a href='/' className='navbar-item'>
@@ -57,11 +76,11 @@ class App extends Component {
           <div class="column has-text-centered">
           <div class="box">
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link level-item">
+            <a href='/' class="navbar-link level-item">
               Overview
             </a>
             <div class="navbar-dropdown">
-              <a href="./" class="navbar-item">
+              <a href='/' class="navbar-item">
                 Overview
               </a>
               <a href="./" class="navbar-item">
@@ -129,38 +148,38 @@ class App extends Component {
       <section class="company-details">
       {/* <div id="navbarBasicExample" class="navbar-menu"> */}
     <div class="navbar-start">
-      <li class="navbar-item">
+    {/* <Link to="/" className="button">Simple</Link> */}
+      
+      <a href="/total-signups" class="navbar-item" name="button">
         signups
-      </li>
-      <li class="navbar-item">
+      </a>
+      <a href="/investment" class="navbar-item" name="button">
         investments
-      </li>
-      <li class="navbar-item">
+      </a>
+      <a href="/revenue" class="navbar-item" name="button">
         revenue
-      </li>
-      <li class="navbar-item">
+      </a>
+      <a href="/exits" class="navbar-item" name="button">
         exits
-      </li>
-      <li class="navbar-item">
+      </a>
+      <a href="/trades" class="navbar-item" name="button">
         trades
-      </li>
+      </a>
       </div>
     {/* </div> */}
-      
-      </section>
-     
+    </section>
     <aside class="side-nav">
     <div class="columns">
-      <div class="column is-one-third">
+      <div class="column is-one-fourth">
         <p class="buttons">
-          <a class="button is-medium">
+          <a href='/' class="button is-medium">
             <span class="icon is-medium">
             <img src="Group 174.svg" alt='Logo' width='25' height='25' />
             </span>
           </a>
         </p>
         <p class="buttons">
-          <a class="button is-medium">
+          <a href='/' class="button is-medium">
             <span class="icon is-medium">
               <img src="funds.svg"alt='Logo' width='25' height='25' />
             
@@ -169,7 +188,7 @@ class App extends Component {
           </a>
         </p>
         <p class="buttons">
-          <a class="button is-medium">
+          <a href='/' class="button is-medium">
             <span class="icon is-medium">
             <img src="Path 188.svg" alt='Logo' width='25' height='25' />
             
@@ -177,34 +196,58 @@ class App extends Component {
           </a>
         </p>
         <p class="buttons">
-          <a class="button is-medium">
+          <a href='/' class="button is-medium">
             <span class="icon is-medium">
             <img src="history.svg" alt='Logo' width='25' height='25' />
             </span>
           </a>
         </p>
         <p class="buttons">
-          <a class="button is-medium">
+          <a href='/' class="button is-medium">
             <span class="icon is-medium">
             <img src="verification.svg" alt='Logo' width='25' height='25' />
             </span>
           </a>
         </p>
         <p class="buttons">
-          <a class="button is-medium">
+          <a href='/'  class="button is-medium">
             <span class="icon is-medium">
             <img src="locked.svg" alt='Logo' width='25' height='25' />
             </span>
           </a>
         </p>
       </div>
-      <div class="column">Auto</div>
-      <div class="column">Auto</div>
+      <div class="column">
+        <h1>Individuals</h1>
+        <canvas id="myCanvas" width="100%" height="100">  
+        </canvas>
       </div>
-      </aside>
-      
-  </div>   
-
+      <div class="column">
+        <h1>Total Signups</h1>
+        {/* <canvas id="myCanvas" width="100%" height="100"> */}
+        {/* <Switch> */}
+        <Route path="/total-signups">  
+          <TotalSignups />
+        </Route> 
+        {/* </Switch> */}
+        {/* </canvas> */}
+      </div>
+      <div class="column">
+        <h1>Companies</h1>
+        <canvas id="myCanvas" width="100%" height="100">  
+        </canvas>
+      </div>
+      <div class="column">
+        <h1>Latest Signups</h1>
+        <Route path="/ ">  
+          <Users />
+        </Route> 
+      </div>
+      </div>
+      </aside> 
+      </Router>   
+  </div> 
+   
     );
   }
 }
