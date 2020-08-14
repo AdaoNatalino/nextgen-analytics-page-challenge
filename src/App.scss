@@ -28,7 +28,6 @@ img {
 nav.navbar {
   height: 60px;
   background-color: #050711;
-  
   border-bottom: 1px solid #81FCED;
 }
 
@@ -82,6 +81,7 @@ li.navbar-item {
 
 p.heading {
   text-transform: initial;
+  color: lightslategray;
 }
 
 p.title {
@@ -131,11 +131,11 @@ div.navbar-start {
   left: 7.5rem;
 }
 
-.column.is-four-fifths {
-  background-color: #050711;
-  height: 60px;
-  color:#849fb4;
-}
+// .column.is-four-fifths {
+//   background-color: #050711;
+//   height: 60px;
+//   color:#849fb4;
+// }
 .navbar-menu {
   border-bottom: 1px solid;
 }
@@ -145,6 +145,43 @@ div.navbar-start {
 }
 h1 {
   color:#849fb4;
+  font-size: 1.4rem;
+}
+
+ul {
+  display: -webkit-inline-box;
+  padding-right: 20px;
+  padding-top: 8px;
+}
+
+span.filter-banner{
+
+padding-top: 10px;
+padding-right: 20px;
+font-weight: bold;
+}
+
+button.button {
+  background:  #050711;
+  color: beige;
+}
+h1.latest-signups{
+  font-size: 1.2rem;
+}
+
+th.title-meeting{
+
+  padding: 20px 30px;
+}
+
+tr{
+  background:  #050711;
+  color: #849fb4;
+
+}
+
+tbody{
+  background:  #050711;
 }
 
 
@@ -159,4 +196,7 @@ h1 {
   to {
     transform: rotate(360deg);
   }
+}
+.container{
+  background-color:  #000000;
 }
