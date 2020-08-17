@@ -11,13 +11,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-    
 }
 
-div.ind-container{
+div.ind-container {
   background-color: #050711;
 }
-div.comp-container{
+div.comp-container {
   background-color: #050711;
 }
-

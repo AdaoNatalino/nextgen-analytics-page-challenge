@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-// import Doughnut from './Doughnut.jsx';
-// import Companies from './Companies.jsx';
-import Users from './Users.jsx';
-import GreenChart from './GreenChart.jsx';
-import VioletChart from './VioletChart.jsx';
-import DonutChart from './DonutChart.jsx';
-// import { render } from "react-dom";
-//import $ from "jquery";
-import './App.scss';
+import Users from './components/Users.jsx';
+import GreenChart from './components/GreenChart.jsx';
+import VioletChart from './components/VioletChart.jsx';
+import DonutChart from './components/DonutChart.jsx';
+import './components/App.scss';
 import 'bulma';
 
 class App extends Component {
   render() {
     return (
-      //Main navbar code starts
       <div class='flex-wrap'>
         <Router>
           <nav
@@ -74,8 +69,6 @@ class App extends Component {
                   </div>
                 </div>
               </div>
-
-              {/* <div class="level-item has-text-centered"> */}
               <div class='column has-text-centered'>
                 <div class='box'>
                   <div>
@@ -84,7 +77,6 @@ class App extends Component {
                   </div>
                 </div>
               </div>
-              {/* <div class="level-item has-text-centered">  */}
               <div class='column has-text-centered'>
                 <div class='box'>
                   <div>
@@ -93,7 +85,6 @@ class App extends Component {
                   </div>
                 </div>
               </div>
-              {/* <div class="level-item has-text-centered">  */}
               <div class='column has-text-centered'>
                 <div class='box'>
                   <div>
@@ -102,7 +93,6 @@ class App extends Component {
                   </div>
                 </div>
               </div>
-              {/* <div class="level-item has-text-centered">  */}
               <div class='column has-text-centered'>
                 <div class='box'>
                   <div>
@@ -111,7 +101,6 @@ class App extends Component {
                   </div>
                 </div>
               </div>
-              {/* <div class="level-item has-text-centered">  */}
               <div class='column has-text-centered'>
                 <div class='box'>
                   <div>
@@ -123,10 +112,7 @@ class App extends Component {
             </div>
           </section>
           <section class='company-details'>
-            {/* <div id="navbarBasicExample" class="navbar-menu"> */}
             <div class='navbar-start'>
-              {/* <Link to="/" className="button">Simple</Link> */}
-
               <a href='/latest-signups' class='navbar-item' name='button'>
                 signups
               </a>
@@ -143,7 +129,6 @@ class App extends Component {
                 trades
               </a>
             </div>
-            {/* </div> */}
           </section>
           <aside class='side-nav'>
             <div class='columns'>
@@ -164,8 +149,6 @@ class App extends Component {
                   <a href='/' class='button is-medium'>
                     <span class='icon is-medium'>
                       <img src='funds.svg' alt='Logo' width='25' height='25' />
-
-                      {/* <i class="fas fa-heading"></i> */}
                     </span>
                   </a>
                 </p>
@@ -215,7 +198,6 @@ class App extends Component {
               </div>
               <section className='line-chart'>
                 <div class='column'>
-                  {/* <h1></h1> */}
                   <div>
                     <Route path='/btn-line'>
                       <GreenChart />
@@ -223,7 +205,6 @@ class App extends Component {
                   </div>
                 </div>
                 <div class='column'>
-                  {/* <h1></h1> */}
                   <div>
                     <Route path='/btn-line'>
                       <VioletChart />
@@ -233,7 +214,6 @@ class App extends Component {
               </section>
               <section className='signup-info'>
                 <div class='column'>
-                  {/* <h1></h1> */}
                   <div>
                     <Route path='/btn-line'>
                       <DonutChart />
