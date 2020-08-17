@@ -15,7 +15,7 @@ export default class DonutChart extends Component {
         datasets: [
           {
             label: 'Total Signups',
-            backgroundColor: ['#e754ca', '#54e7bb'],
+            backgroundColor: ['#54e7bb','#e754ca'],
 
             data: [284, 364],
           },
@@ -26,7 +26,7 @@ export default class DonutChart extends Component {
         legend: {
           display: true,
           labels: {
-            rotation: 10,
+            
           },
         },
       },
