@@ -1,39 +1,30 @@
 // const { Component } = require("react")
 
-import React, { Component } from "react";
-import USERS from './data/users'
+import React, { Component } from 'react';
+import userData from './data/userData';
+// import Users from './data/userData'
 import './App.scss';
 
 class Users extends Component {
-  render () {
-  return (
+  render() {
+    return (
       <div>
-      
-        {
-
-          USERS.map(USER => {
-            return (
-
-            
-            <table class = "table">
-               <tbody>
+        {userData.individuals.map((individual) => {
+          return (
+            <div>
+              <table class='table'>
+                <tbody>
                   <tr>
-                     <td>{USER.name}</td>
-                     <td>{USER.meetingTime}</td>
-                     
+                    <td>{individual.name}</td>
+                    <td>{individual.meetingTime}</td>
                   </tr>
-                  
-               </tbody>
-            </table>
-            
-            
-           );
-
-          })
-        }
-
-    </div>
-   ) 
+                </tbody>
+              </table>
+            </div>
+          );
+        })}
+      </div>
+    )
   }
 }
 

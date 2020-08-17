@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Users from './Users.jsx';
 import GreenChart from './GreenChart.jsx';
 import VioletChart from './VioletChart.jsx';
+import DonutChart from './DonutChart.jsx';
 // import { render } from "react-dom";
 //import $ from "jquery";
 import './App.scss';
@@ -66,9 +67,9 @@ class App extends Component {
                       Overview
                     </a>
                     <div class='navbar-dropdown'>
-                      <a href='/' class='navbar-item'></a>
+                      {/* <a href='/' class='navbar-item'></a>
                       <a href='./' class='navbar-item'></a>
-                      <a href='./' class='navbar-item'></a>
+                      <a href='./' class='navbar-item'></a> */}
                     </div>
                   </div>
                 </div>
@@ -214,29 +215,30 @@ class App extends Component {
               </div>
               <section className='line-chart'>
                 <div class='column'>
-                  <h1></h1>
+                  {/* <h1></h1> */}
                   <div>
-                  <Route path='/btn-line'>
-                    <GreenChart />
-                  </Route>
+                    <Route path='/btn-line'>
+                      <GreenChart />
+                    </Route>
                   </div>
                 </div>
                 <div class='column'>
-                  <h1></h1>
+                  {/* <h1></h1> */}
                   <div>
-                  <Route path='/btn-line'>
-                    <VioletChart />
-                  </Route>
+                    <Route path='/btn-line'>
+                      <VioletChart />
+                    </Route>
                   </div>
-
                 </div>
               </section>
               <section className='signup-info'>
-                <div class='column has-text-centered'>
-                  <h1 className='total-signups'>Total Signups</h1>
-                  {/* <Route path="/total-signups">  
-          <Users />
-        </Route>  */}
+                <div class='column'>
+                  {/* <h1></h1> */}
+                  <div>
+                    <Route path='/btn-line'>
+                      <DonutChart />
+                    </Route>
+                  </div>
                 </div>
                 <div class='nav-filter'>
                   <ul>
@@ -293,7 +295,7 @@ class App extends Component {
                     </li>
                   </ul>
                 </div>
-                <div class='column has-text-centered'>
+                <div class='column'>
                   <h1 className='latest-signups'>Latest Signups</h1>
                   <thead>
                     <tr>
@@ -301,10 +303,11 @@ class App extends Component {
                       <th className='title-meeting'>Scheduled Meeting</th>
                     </tr>
                   </thead>
-
-                  <Route path='/btn-line'>
-                    <Users />
-                  </Route>
+                  <div>
+                    <Route path='/btn-line'>
+                      <Users />
+                    </Route>
+                  </div>
                 </div>
               </section>
             </div>
